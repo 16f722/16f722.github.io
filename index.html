@@ -32,7 +32,7 @@ a{text-decoration:none}
 
 <h3>Custom Controls for Residential Courtyard - 2025</h3>
 <p><b>link: </b><a href="https://youtube.com/shorts/f2-KAvSS5AQ?feature=share">Pico PLC</a></p>
-<p>I built 5 compact programmable controllers by hand soldering a Raspberry Pico, opto-isolators, 4 relays, and supporting descretes on to a proto-board.  I designed a ladder logic program and implemented in MicroPython.  I prepared revisions and programmed the controllers in the field as requirements shifted.  I selected the fabricated embedded approach to have a flexible and feasible solution while I met the need to be compact, economical, and maintainable.</p>
+<p>I built 5 compact programmable controllers by hand soldering a Raspberry Pico, opto-isolators, 4 relays, and supporting descretes on to a proto-board.  I designed a ladder logic program and implemented in MicroPython.  I implemented the scan loop as a Software Timer ISR to preserve REPL utility and use of floats (more accessible to future maintainers, but require automated garbage collection which is unavailble in a hardware timer ISR).  I prepared revisions and programmed the controllers in the field as requirements shifted.  I selected the fabricated embedded approach to have a flexible and feasible solution while I met the need to be compact, economical, and maintainable.</p>
 
 <h3>MicroPython Access Control System for Wiegand Badge Readers - 2025</h3>
 <p><b>link: </b><a href="https://youtube.com/shorts/vhfVRC4fm1w?feature=share">Pico ACS</a></p>
