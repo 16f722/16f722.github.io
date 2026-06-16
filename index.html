@@ -25,23 +25,28 @@ a{text-decoration:none}
 <h2>Projects</h2>
 
 <h3>Baremetal Heapsort with Spreadsheet Primatives - 2023</h3>
-<p>link: <a href="https://docs.google.com/spreadsheets/d/1eG5UE83ijRobBXpNT6piSy_5_PcYF5XRqEjOxgrd0Ac/edit?usp=sharing">Baremetal Heapsort Spredsheet</a></p>
+<p><b>link: </b><a href="https://docs.google.com/spreadsheets/d/1eG5UE83ijRobBXpNT6piSy_5_PcYF5XRqEjOxgrd0Ac/edit?usp=sharing">Baremetal Heapsort Spredsheet</a></p>
 <p>I implemented the Heapsort algorithm as 35 opcodes for a virtual ALU having ten operators, indexed memory, and conditional jumps. Sorting 31 elements halts around 2000 cycles.  I used this ALU to compare bubble sort modifications (ie multiple comparisons per pass) to see how the n<sup>2</sup> v. n ln(n) break even point changed.</p>
 
 <h3>Enterprise Access Control System - 2026</h3>
 <p>New Construction, 28 doorways, 2 IT cabinets, 47 cameras - I coordinated with the End Client, Construction Management, Trade Contractors, Engineering, and IT Services.  I communicated the construction changes required to accomodate installation.  I worked with the subcontractor to ensure correct cabling installation into electrical conduit pathways.  I identified the crtical path items and developed a plan to hit the implementation goals.  I revised plans as conditions evolved.  I kept contractor apprised of progress and challenges.  I installed the control panels and field devices.  And I worked with remote engineer to program and test system.</p>
 
+<h3>Transmission Line Buffer</h3>
+<p>During commissioning of vehicle gate access control, I found invalid reads for the far range (clicker) receiver while the keypad operated correctly.  After inspecting the invalid fob values from the controller log, I used an oscillscope to confirm excessive cross talk in the cable run (single ended signaling over 400ft).  I leveraged Gemini to develop a simple two transistor buffer with a threshold well above the cross talk and high gain to speed up the slew rate.  I assembled two dual channel boards, used a saw tooth wave to valid the implementation, and completed they access control install.  I then used KiCad to capture a PCB layout, submitted to JLCPCB for SMT assembly, populated headers, and validated the production run for future projects.</p>
+
 <h3>Custom Controls for Residential Courtyard - 2025</h3>
-<p>link: <a href="https://youtube.com/shorts/f2-KAvSS5AQ?feature=share">Pico PLC</a></p>
+<p><b>link: </b><a href="https://youtube.com/shorts/f2-KAvSS5AQ?feature=share">Pico PLC</a></p>
 <p>I built 5 compact programmable controllers by hand soldering a Raspberry Pico, opto-isolators, 4 relays, and supporting descretes on to a proto-board.  I designed a ladder logic program and implemented in MicroPython.  I prepared revisions and programmed the controllers in the field as requirements shifted.  I selected the fabricated embedded approach to have a flexible and feasible solution while I met the need to be compact, economical, and maintainable.</p>
 
 <h3>MicroPython Access Control System for Wiegand Badge Readers</h3>
-<p>link: <a href="https://youtube.com/shorts/vhfVRC4fm1w?feature=share">Pico ACS</a></p>
+<p><b>link: </b><a href="https://youtube.com/shorts/vhfVRC4fm1w?feature=share">Pico ACS</a></p>
 <p>I wanted a deeper understanding of card reader communication and developed GPIO interrupt routines on Raspberry Pico to reconstruct the fob id number from Wiegand signals (still commonly used), for different card readers and card types.  I used an LCD to display the recovered Wiegand data.  I then implemented a primative persistend sorted database of names, apartment, fob id, and access level which is used to authentic fobs presented to a badage reader and activate the card reader LED and lock relay as appropriate.</p>
 
 <h3>Vetinarian Hospital Access Control System - 2024</h3>
 <p>New Construction, 17 doorways - Coordinated with End Client, Construction Management, and Low Voltage Contractor.  Installed control panels and field devices.  Programmed and tested system.</p>
 
+
+24Hr backup
 <ul>
 <li>Access Control Prototype — Raspberry Pico + MicroPython</li>
 <li>PLC / HMI Upgrades</li>
